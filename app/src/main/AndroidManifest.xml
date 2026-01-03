@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.tobiasbielefeld.solitaire"
     android:installLocation="auto">
 
     <application
@@ -14,31 +13,37 @@
         <activity
             android:name=".ui.about.AboutActivity"
             android:label="@string/title_activity_about"
-            android:theme="@style/AppThemeActionBar" />
+            android:theme="@style/AppThemeActionBar"
+            android:exported="false" />
         <activity
             android:name=".ui.statistics.StatisticsActivity"
             android:label="@string/title_activity_statistics"
-            android:theme="@style/AppThemeActionBar" />
+            android:theme="@style/AppThemeActionBar"
+            android:exported="false" />
         <activity
             android:name=".ui.settings.Settings"
             android:label="@string/title_activity_settings"
-            android:theme="@style/AppThemeActionBar" />
+            android:theme="@style/AppThemeActionBar"
+            android:exported="false" />
 
         <activity
             android:name=".ui.settings.SettingsGames"
             android:label="@string/settings_games"
-            android:theme="@style/AppThemeActionBar" />
+            android:theme="@style/AppThemeActionBar"
+            android:exported="false" />
 
-        <activity android:name=".ui.GameManager" />
+        <activity android:name=".ui.GameManager" android:exported="false" />
         <activity
             android:name=".ui.manual.Manual"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/game_manual"
-            android:theme="@style/AppThemeNoActionBar" />
+            android:theme="@style/AppThemeNoActionBar"
+            android:exported="false" />
         <activity
             android:name=".ui.GameSelector"
             android:label="@string/app_name"
-            android:theme="@style/AppThemeNoActionBar">
+            android:theme="@style/AppThemeNoActionBar"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

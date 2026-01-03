@@ -78,39 +78,29 @@ public class DialogPreferenceCards extends CustomDialogPreference implements Vie
 
     public void onClick(View v) {
         int choice;
+        int viewId = v.getId();
 
-        switch (v.getId()) {
-            case R.id.settingsLinearLayoutCardsBasic:
-            default:
-                choice = 1;
-                break;
-            case R.id.settingsLinearLayoutCardsClassic:
-                choice = 2;
-                break;
-            case R.id.settingsLinearLayoutCardsAbstract:
-                choice = 3;
-                break;
-            case R.id.settingsLinearLayoutCardsSimple:
-                choice = 4;
-                break;
-            case R.id.settingsLinearLayoutCardsModern:
-                choice = 5;
-                break;
-            case R.id.settingsLinearLayoutCardsOxygenDark:
-                choice = 6;
-                break;
-            case R.id.settingsLinearLayoutCardsOxygenLight:
-                choice = 7;
-                break;
-            case R.id.settingsLinearLayoutCardsPoker:
-                choice = 8;
-                break;
-            case R.id.settingsLinearLayoutCardsParis:
-                choice = 9;
-                break;
-            case R.id.settingsLinearLayoutCardsDondorf:
-                choice = 10;
-                break;
+        if (viewId == R.id.settingsLinearLayoutCardsClassic) {
+            choice = 2;
+        } else if (viewId == R.id.settingsLinearLayoutCardsAbstract) {
+            choice = 3;
+        } else if (viewId == R.id.settingsLinearLayoutCardsSimple) {
+            choice = 4;
+        } else if (viewId == R.id.settingsLinearLayoutCardsModern) {
+            choice = 5;
+        } else if (viewId == R.id.settingsLinearLayoutCardsOxygenDark) {
+            choice = 6;
+        } else if (viewId == R.id.settingsLinearLayoutCardsOxygenLight) {
+            choice = 7;
+        } else if (viewId == R.id.settingsLinearLayoutCardsPoker) {
+            choice = 8;
+        } else if (viewId == R.id.settingsLinearLayoutCardsParis) {
+            choice = 9;
+        } else if (viewId == R.id.settingsLinearLayoutCardsDondorf) {
+            choice = 10;
+        } else {
+            // R.id.settingsLinearLayoutCardsBasic or default
+            choice = 1;
         }
 
         prefs.saveCardTheme(choice);
@@ -140,38 +130,27 @@ public class DialogPreferenceCards extends CustomDialogPreference implements Vie
         int row = prefs.getSavedFourColorMode() ? 1 : 0;
         int selectedTheme = prefs.getSavedCardTheme();
 
-        switch (selectedTheme) {
-            case 1:
-            default:
-                text = context.getString(R.string.settings_basic);
-                break;
-            case 2:
-                text = context.getString(R.string.settings_classic);
-                break;
-            case 3:
-                text = context.getString(R.string.settings_abstract);
-                break;
-            case 4:
-                text = context.getString(R.string.settings_simple);
-                break;
-            case 5:
-                text = context.getString(R.string.settings_modern);
-                break;
-            case 6:
-                text = context.getString(R.string.settings_oxygen_dark);
-                break;
-            case 7:
-                text = context.getString(R.string.settings_oxygen_light);
-                break;
-            case 8:
-                text = context.getString(R.string.settings_poker);
-                break;
-            case 9:
-                text = context.getString(R.string.settings_cards_paris);
-                break;
-            case 10:
-                text = context.getString(R.string.settings_cards_dondorf);
-                break;
+        if (selectedTheme == 2) {
+            text = context.getString(R.string.settings_classic);
+        } else if (selectedTheme == 3) {
+            text = context.getString(R.string.settings_abstract);
+        } else if (selectedTheme == 4) {
+            text = context.getString(R.string.settings_simple);
+        } else if (selectedTheme == 5) {
+            text = context.getString(R.string.settings_modern);
+        } else if (selectedTheme == 6) {
+            text = context.getString(R.string.settings_oxygen_dark);
+        } else if (selectedTheme == 7) {
+            text = context.getString(R.string.settings_oxygen_light);
+        } else if (selectedTheme == 8) {
+            text = context.getString(R.string.settings_poker);
+        } else if (selectedTheme == 9) {
+            text = context.getString(R.string.settings_cards_paris);
+        } else if (selectedTheme == 10) {
+            text = context.getString(R.string.settings_cards_dondorf);
+        } else {
+            // case 1 or default
+            text = context.getString(R.string.settings_basic);
         }
 
         cardPreview = bitmaps.getCardPreview2(selectedTheme - 1, row);

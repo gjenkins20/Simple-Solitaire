@@ -19,9 +19,9 @@
 package de.tobiasbielefeld.solitaire.ui.statistics;
 
 import android.os.Bundle;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBar;
+import androidx.fragment.app.DialogFragment;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.ActionBar;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
@@ -68,22 +68,18 @@ public class StatisticsActivity extends CustomAppCompatActivity {
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.item_delete:
-                DialogFragment deleteDialog = new DialogHighScoreDelete();
-                deleteDialog.show(getSupportFragmentManager(), "high_score_delete");
-                break;
-            case R.id.item_hide:
-                boolean checked = !prefs.getSavedStatisticsHideWinPercentage();
+        int itemId = item.getItemId();
+        if (itemId == R.id.item_delete) {
+            DialogFragment deleteDialog = new DialogHighScoreDelete();
+            deleteDialog.show(getSupportFragmentManager(), "high_score_delete");
+        } else if (itemId == R.id.item_hide) {
+            boolean checked = !prefs.getSavedStatisticsHideWinPercentage();
 
-                prefs.saveStatisticsHideWinPercentage(checked);
-                item.setChecked(checked);
-                callback.sendNewState(checked);
-
-                break;
-            case android.R.id.home:
-                finish();
-                break;
+            prefs.saveStatisticsHideWinPercentage(checked);
+            item.setChecked(checked);
+            callback.sendNewState(checked);
+        } else if (itemId == android.R.id.home) {
+            finish();
         }
 
         return true;
