@@ -1,152 +1,305 @@
-[![GitHub version](https://badge.fury.io/gh/tobiasBielefeld%2FSimple-Solitaire.svg)](https://badge.fury.io/gh/tobiasBielefeld%2FSimple-Solitaire)
-![license](http://img.shields.io/badge/license-GPLv3+-brightgreen.svg)
-![platform](http://img.shields.io/badge/platform-Android-blue.svg)
+# Simple Solitaire Collection - Modernized
 
-I am archiving this version of the app, since I already stopped working on it long time ago.
-There are way too many clones of this game on the google play store making money with my work with ads and this made me lose the desire to work on it completely.
-I am planning to update the game to put it on the google playstore again, but not as opensource anymore.
-I am sorry for that change, but I have no other way to keep me interested in working at this app.
+[![License](https://img.shields.io/badge/license-GPLv3%2B-brightgreen.svg)](LICENSE.txt)
+[![Platform](https://img.shields.io/badge/platform-Android-blue.svg)](https://developer.android.com)
+[![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=16)
 
-[<img alt="Get it on Google Play" height="80" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png">](https://play.google.com/store/apps/details?id=de.tobiasbielefeld.solitaire) [<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/app/de.tobiasbielefeld.solitaire) 
+A modernized fork of the Simple Solitaire Collection, updated to work with current Android development tools and practices.
 
-Contact address: tobias.bielefeld [at] gmail.com
+## 🆕 What's New in This Fork
 
-#### Now contains 17 different Solitaire games!
-AcesUp, Calculation, Canfield, Forty&Eight, FreeCell, Golf, Grandfather's Clock, Gypsy, Klondike, Mod3, Napoleon's Tomb, Pyramid, SimpleSimon, Spider, TriPeaks, Vegas and Yukon!
+This is an **actively maintained fork** of the original Simple Solitaire project, which was archived in February 2024. This version includes:
 
-# Simple Solitaire
+- ✅ **AndroidX Migration** - Updated from deprecated Support Library to AndroidX
+- ✅ **Modern Build Tools** - Gradle 8.4 and Android Gradle Plugin 8.1.4
+- ✅ **Current Android Support** - Target SDK 34 (Android 14)
+- ✅ **Build Compatibility** - Works with latest Android Studio
+- ✅ **Maintained Dependencies** - Updated to current library versions
+- 🔜 **New Games Coming** - Brisca (Spanish card game) and more planned
 
-<img src="https://github.com/TobiasBielefeld/Simple-Solitaire/blob/master/pictures/screenshots/1.png" width=200 height=356> <img src="https://github.com/TobiasBielefeld/Simple-Solitaire/blob/master/pictures/screenshots/2.png" width=200 height=356> <img src="https://github.com/TobiasBielefeld/Simple-Solitaire/blob/master/pictures/screenshots/8.png" width=200 height=356> <img src="https://github.com/TobiasBielefeld/Simple-Solitaire/blob/master/pictures/screenshots/4.png" width=200 height=356> 
+## 📱 About the Game
 
+Simple Solitaire Collection is a lightweight, fully-featured solitaire game collection for Android with **no ads, no tracking, and completely free**.
 
-You can find more screenshots for phones and tablets and the uses card themes as .svg files [here](./pictures/)
+### Currently Includes 17 Different Games:
+- AcesUp
+- Calculation
+- Canfield
+- Forty&Eight
+- FreeCell
+- Golf
+- Grandfather's Clock
+- Gypsy
+- Klondike
+- Mod3
+- Napoleon's Tomb
+- Pyramid
+- SimpleSimon
+- Spider
+- TriPeaks
+- Vegas
+- Yukon
 
-There is a DummyGame class with a lot of comments, if you want to add a new game. I hope it's good enough for that!
+## ✨ Features
 
-I learned Android and Java by myself using e-books and browsing Stack Overflow for solutions, so please don't expect too much from my source code :D
+- **Highly Customizable**: 6 card sets, 12 card backgrounds, 6 background colors
+- **Adjustable Difficulty**: Configure settings for Klondike, Spider, and Golf
+- **Automatic Saving**: Game saves automatically when you pause or close
+- **High Scores**: Track your best performances
+- **Undo Function**: Take back up to 20 moves
+- **Hint System**: Get up to 3 move suggestions
+- **Left-Handed Mode**: Mirror card positions for left-handed play
+- **Landscape Support**: Play in portrait or landscape mode
+- **Tablet Optimized**: Great experience on larger screens
 
-It is a very simple game, but customizable and with some neat functions like hints. Here is my Google Play description:
+## 🚀 Getting Started
 
-Highly customizable:
-There are 6 different looking card sets in this game, 12 different card backgrounds and 6 different background colours. So you have a large choice to customize your experience!
+### For Users
 
-Set up difficulty:
-You can set up the difficulty for Klondike, Spider and Golf in the settings!
+#### Download & Install
+1. Download the latest APK from [Releases](../../releases)
+2. Enable "Install from Unknown Sources" on your Android device
+3. Install the APK
+4. Enjoy!
 
-Automatic saving:
-The current game will be saved every time you pause or close the app. So you can continue your game where you left it!
+**Requirements:**
+- Android 4.1 (API 16) or higher
+- ~20MB storage space
 
-High Score list:
-When winning a game, your score will be saved in a list of up to 10 high scores.
+### For Developers
 
-Game features:
-This game has a undo function to take back up to 20 card movements. A hint function shows you up to 3 possible card movements at once.
+#### Prerequisites
+- Android Studio Hedgehog (2023.1.1) or newer
+- JDK 17 or higher
+- Android SDK with API 34
 
-Left handed mode: 
-There is a option for left handed people to mirror the card positions to the left side of the screen.
+#### Building from Source
 
-No ads:
-This game is completely free without ads, tracking or something else. Just have fun :)
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/gjenkins20/Simple-Solitaire.git
+   cd Simple-Solitaire
+   ```
 
-Landscape and tablet support: 
-You can switch to landscape mode, this is better for larger screens. It is also possible to lock the orientation in the settings
+2. **Open in Android Studio:**
+   - File → Open → Select the Simple-Solitaire folder
+   - Wait for Gradle sync to complete
 
-## Hall of shame
-Reintroduce the hall of shame, where I will list blatant copies of this app! Every single one of people who like to steal open source software to make profit by including ads! Here they are:
+3. **Build and run:**
+   ```bash
+   # Build debug APK
+   ./gradlew assembleDebug
+   
+   # Install on connected device
+   ./gradlew installDebug
+   
+   # Or click the Run button (▶️) in Android Studio
+   ```
 
-- https://play.google.com/store/apps/details?id=com.atechnos.solitaire
-- https://play.google.com/store/apps/details?id=de.classicsolitaire.solitairegame
-- https://play.google.com/store/apps/details?id=de.collectionof.solitairegame
-- https://play.google.com/store/apps/details?id=de.allinone.solitairegame
-- https://play.google.com/store/apps/details?id=de.collectionof.newsolitairegame
-- https://play.google.com/store/apps/details?id=startandroid.ru.solitairepack
-- https://play.google.com/store/apps/details?id=com.ponglos.solitaire
-- https://play.google.com/store/apps/details?id=net.sekmetech.solitaire
-- https://play.google.com/store/apps/details?id=com.generic.solitaireallinone
+4. **Build release APK:**
+   ```bash
+   ./gradlew assembleRelease
+   # Output: app/build/outputs/apk/release/app-release.apk
+   ```
 
-## Installation Guide
-The instructions to compile this app are very easy. Just download the project and open Android Studio. Then go to File -> Open -> Navigate to the download location -> Choose the folder -> If you try to start the app, Android Studio should install all necessary dependencies and you are ready to go.
+## 🛠️ Technical Details
 
-Or alternatively, follow this guide to compile the app on the command line: https://developer.android.com/studio/build/building-cmdline.html
+### Modernization Changes
 
-## Usage
-If you want to use my work for your own project (which means in most cases: Put ads in it and publish on Google Play Store) YOU HAVE TO FOLLOW THE GPL LICENSE! This means, your project MUST be open source under a GPLv3+ compatible license and MUST contain attribution for the original work! I already found a lot of copies which simply removed my "About Game" screen and changed some graphics.
+This fork includes significant updates to bring the codebase up to modern Android standards:
 
-So please follow the rules! Use this attribution text (or a similar one)
+#### Build System
+- **Gradle**: Updated from 6.x to 8.4
+- **Android Gradle Plugin**: Updated from 3.x to 8.1.4
+- **Build Features**: Added modern namespace and buildConfig declarations
 
-Simple Solitaire Collection - https://github.com/TobiasBielefeld/Simple-Solitaire -
-Copyright 2016 - Tobias Bielefeld - tobias.bielefeld@gmail.com -
-Licensed under GPLv3+ https://www.gnu.org/licenses/gpl-3.0
+#### AndroidX Migration
+- All `android.support.*` imports migrated to `androidx.*`
+- Updated XML layouts to use AndroidX widget classes
+- Migrated to Material Design Components
+- Updated to AndroidX-compatible libraries
 
-And state the changes you made! For example: "Modified to add Google Play Games and ads"
+#### SDK Versions
+- **Min SDK**: 16 (Android 4.1 Jelly Bean)
+- **Target SDK**: 34 (Android 14)
+- **Compile SDK**: 34
 
-Also think of the other aspects of the GPL license!
+#### Key Dependencies
+```gradle
+androidx.appcompat:appcompat:1.6.1
+com.google.android.material:material:1.9.0
+androidx.legacy:legacy-support-v4:1.0.0
+androidx.cardview:cardview:1.0.0
+```
 
-## To-Do List
+### Project Structure
+```
+app/src/main/
+├── java/de/tobiasbielefeld/solitaire/
+│   ├── classes/          # Core game classes
+│   ├── games/            # Individual game implementations
+│   ├── helper/           # Utility classes
+│   └── ui/               # User interface activities
+├── res/
+│   ├── drawable/         # Vector drawables and backgrounds
+│   ├── drawable-nodpi/   # Card graphics and assets
+│   ├── layout/           # XML layouts
+│   ├── values/           # Strings, colors, styles
+│   └── xml/              # Preferences
+└── AndroidManifest.xml
+```
 
-- [X] Add more games (frecell, spider and yukon)
-- [X] Improve the settings to use fragments
-- [X] Add even more games (Simple Simon, Golf, etc)
-- [ ] ~~Add the card themes from Kpatience, if their license is compatible to mine.~~ (I asked the main dev from Kpatience, the licenses of the themes aren't clear, and there are no links to the authors of them...)
-- [X] Add a color chooser for background color
-- [X] Improve the Highscores to a Statistics Activity (including date stamps)
-- [X] Find the reason why the game activity gets created two times when changing the screen orientation in game
-- [X] Add a button to mix the cards if no movement can be done
-- [X] Add 'Grandfathers Clock'
-- [ ] Add a Custom game maker, maybe
-- [X] Add a 'poker standard' card theme and 4 color themes
-- [X] Add a option to Yukon to play on same suits, instead of different color (like Russian Solitaire)
-- [X] Also save high scores when canceling a game
-- [ ] Add an option to set up appearance for each game indivially
-- [X] Implement "Tap to select/move cards"
-- [ ] ~~Add custom images for backgrounds~~ (Would require additional android permissions, I don't really want that)
-- [X] Add drag and drop feature to change the order of the games in the main menu
+## 🎮 Adding New Games
 
-## Translations 
-Thanks to the following persons for providing translations :D (Help translating here: https://poeditor.com/join/project/PYX4vcwTjA)
-- Esperanto and Polish: verdulo
+Interested in adding a new solitaire game? Check out `DummyGame.java` in the `games/` directory - it's a well-commented template that shows you exactly what you need to implement.
+
+### Upcoming: Brisca (Spanish Card Game)
+We're currently working on adding Brisca, a popular Spanish trick-taking card game. Stay tuned!
+
+## 🌍 Translations
+
+Currently available in:
+- English
+- Esperanto
+- Finnish
+- French
+- Italian
+- Japanese
+- Polish
+- Portuguese
+- Turkish
+- Ukrainian
+
+Want to add your language? Contributions welcome!
+
+## 📄 License
+
+This project is licensed under the **GPL-3.0 License** - see the [LICENSE.txt](LICENSE.txt) file for details.
+
+```
+Copyright (C) 2016-2024 Tobias Bielefeld (original)
+Copyright (C) 2026 Greg Jenkins (modernization)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+```
+
+### Asset Licenses
+
+- **Poker card theme**: Vectorized Playing Cards 2.0 - LGPL 3.0
+- **Other card themes**: CC0 License (from Pixabay)
+- **Material Design icons**: Apache 2.0 License (Google)
+- **Sounds**: CC0 License (from freesound.org)
+
+## 🙏 Credits
+
+### Original Author
+**Tobias Bielefeld** - Original Simple Solitaire Collection
+- Original Repository: [TobiasBielefeld/Simple-Solitaire](https://github.com/TobiasBielefeld/Simple-Solitaire) (archived)
+- Contact: tobias.bielefeld@gmail.com
+
+### Modernization
+**Greg Jenkins** - AndroidX migration and ongoing maintenance
+- Fork Repository: [gjenkins20/Simple-Solitaire](https://github.com/gjenkins20/Simple-Solitaire)
+
+### Translation Contributors
+- Esperanto & Polish: verdulo
 - French: romainhk and cicithesquirrel
 - Japanese: naofum
 - Finnish: winjar
 - Turkish: sekmenhuseyin
-- Italian: imko92 (on POEditor.com)
-- Portuguese: Alexandre Parente (on POEditor.com)
-- Ukranian: olexn (on POEditor.com)
+- Italian: imko92
+- Portuguese: Alexandre Parente
+- Ukrainian: olexn
 
-## Licenses
+### Libraries Used
+- [AmbilWarna](https://github.com/yukuku/ambilwarna) - Color picker (Apache 2.0)
+- [PagerSlidingTabStrip](https://github.com/astuetz/PagerSlidingTabStrip) - Tab navigation (Apache 2.0)
 
-Poker card theme: Vectorized Playing Cards 2.0 - http://sourceforge.net/projects/vector-cards/
-Copyright 2015 - Chris Aguilar - conjurenation@gmail.com
-Licensed under LGPL 3 - www.gnu.org/copyleft/lesser.html
+## 🤝 Contributing
 
-The other card themes used in this project were originally published on https://pixabay.com/ under the [CC0 license!](https://creativecommons.org/share-your-work/public-domain/cc0/)
+Contributions are welcome! Whether it's:
+- 🐛 Bug fixes
+- ✨ New features
+- 🎨 UI improvements
+- 🌍 Translations
+- 📖 Documentation
 
-Every card theme was modified by me to add a four color theme! You can download the used pictures as .svg files from my [pictures directory](./pictures/cards)
+### How to Contribute
 
-The Material Design Symbols used for the menu icons are made by Google Inc and are published under the [Apache 2.0 license!](https://www.apache.org/licenses/LICENSE-2.0.txt)
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Test thoroughly
+5. Commit your changes (`git commit -m 'Add amazing feature'`)
+6. Push to the branch (`git push origin feature/amazing-feature`)
+7. Open a Pull Request
 
-Custom color picker: Uses the [AmbilWarna library](https://github.com/yukuku/ambilwarna) published under the [Apache 2.0 license!](https://www.apache.org/licenses/LICENSE-2.0.txt)
+Please ensure:
+- Code follows existing style conventions
+- All games still work correctly
+- New features are documented
+- Commit messages are clear and descriptive
 
-Sliding Tabs: Uses the [PagerSlidingTabStrip library](https://github.com/astuetz/PagerSlidingTabStrip#license) published under the [Apache 2.0 license!](https://www.apache.org/licenses/LICENSE-2.0.txt)
+## 🐛 Bug Reports
 
-All sounds used in this project were originally published on https://freesound.org under the [CC0 license!](https://creativecommons.org/share-your-work/public-domain/cc0/)
+Found a bug? Please [open an issue](../../issues) with:
+- Android version
+- Device model
+- Steps to reproduce
+- Expected vs actual behavior
+- Screenshots if applicable
 
-This project is licensed under the GPLv3+ license! Full license text can be found [here](./LICENSE.txt)
+## 📮 Contact
 
-```
-Copyright (C) 2016  Tobias Bielefeld
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-any later version.
+- **Repository Issues**: [GitHub Issues](../../issues)
+- **Original Author**: tobias.bielefeld@gmail.com
+- **Fork Maintainer**: Available through GitHub
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+## 🗺️ Roadmap
 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+### Completed
+- ✅ AndroidX migration
+- ✅ Gradle modernization
+- ✅ Android 14 compatibility
+- ✅ Build with latest tools
 
-If you want to contact me, send me an e-mail at tobias.bielefeld@gmail.com
-```
+### In Progress
+- 🔄 Adding Brisca (Spanish card game)
+- 🔄 Code quality improvements
+- 🔄 Enhanced documentation
+
+### Planned
+- 📋 Additional card games
+- 📋 Custom card deck creator
+- 📋 Statistics tracking improvements
+- 📋 Achievement system
+- 📋 Cloud save sync (optional)
+
+## ⭐ Show Your Support
+
+If you find this project useful, please consider:
+- ⭐ Starring the repository
+- 🐛 Reporting bugs
+- 💡 Suggesting features
+- 🤝 Contributing code
+- 📢 Sharing with others
+
+## 📊 Project Status
+
+**Status**: Actively Maintained ✅
+
+This is a maintained fork of the original archived project. We welcome contributions and are committed to keeping this working with modern Android development tools.
+
+---
+
+**Original Project**: [TobiasBielefeld/Simple-Solitaire](https://github.com/TobiasBielefeld/Simple-Solitaire) (archived February 2024)
+
+**This Fork**: Modernized, maintained, and open to contributions!
